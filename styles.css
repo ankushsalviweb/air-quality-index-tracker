@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #00796b;
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+    margin: 10px auto;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border: 1px solid #00796b;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #00796b;
+    text-align: left;
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+}
+
+td {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* AQI Color Coding */
+.good {
+    color: #009966;
+}
+
+.moderate {
+    color: #ffde33;
+}
+
+.unhealthy-sg {
+    color: #ff9933;
+}
+
+.unhealthy {
+    color: #cc0033;
+}
+
+.very-unhealthy {
+    color: #660099;
+}
+
+.hazardous {
+    color: #7e0023;
+}
+
+#recentSearches {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#recentSearches li {
+    background-color: #8aafb4;
+    border: 1px solid #00796b;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Index Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <h1>Air Quality Index Tracker</h1>
+    <p class="centered-text">Enter a city to get the current Air Quality Index (AQI) and weather details:</p>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getAQI()">Check AQI</button>
+
+    <div id="result">
+        <canvas id="aqiChart" width="400" height="200"></canvas>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>AQI</td>
+                <td id="aqi"></td>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td id="temperature"></td>
+            </tr>
+            <tr>
+                <td>Humidity</td>
+                <td id="humidity"></td>
+            </tr>
+            <tr>
+                <td>Wind</td>
+                <td id="wind"></td>
+            </tr>
+            <tr>
+                <td>Main Pollutants</td>
+                <td id="pollutants"></td>
+            </tr>
+            <tr>
+                <td>Health Advice</td>
+                <td id="advice"></td>
+            </tr>
+            <tr>
+                <td>Last Update</td>
+                <td id="lastUpdate"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="map" style="height: 400px;"></div>
+    <h3>Recent Searches:</h3>
+    <ul id="recentSearches"></ul>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
